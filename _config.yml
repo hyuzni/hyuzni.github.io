@@ -46,7 +46,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Welcome to HYUZNI's Blog. :)
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://hyuzni.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "assets/images/favicon.png" # the favicon for your site
 
 # Yat date format
@@ -67,7 +67,7 @@ yat:
 # google_analytics: [Tracking ID]
 
 # If you want to generate website sitemap, you can set true
-# sitemap: false
+sitemap: true
 
 # If you want to change site language, you can set lang option
 lang: "ko"  # default lang is en
@@ -144,19 +144,19 @@ lang: "ko"  # default lang is en
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+header_pages:
+  - about.html
+  - archives.html
+  - categories.html
+  - tags.html
+#  - about.md
 
 # Page default value
 defaults:
   home:
     heading: "The First Blog."
     subheading: "정신없는 첫 블로그 입성!😵"
-    banner: "assets/images/banners/home.jpeg"
+    banner: "assets/images/bg_banner.png"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
