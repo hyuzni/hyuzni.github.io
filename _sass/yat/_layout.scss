@@ -778,6 +778,110 @@ html {
   vertical-align: baseline;
 }
 
-.f-pens {
-  font-family: $pens-font-family;
+/* about page */
+.page-about {
+  .profile-intro {
+    margin-bottom: 80px;
+  }
+  .profile-info {
+    position: relative;
+    display: flex;
+    
+    & > div {
+      flex: 1 0 50%;
+      box-sizing: border-box;
+      align-self: center;
+    }
+
+    .info-top {
+      text-align: center;
+
+      .profile-image {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+      }
+      
+      .name {
+        @include relative-font-size(1.5);
+        font-weight: $base-font-weight * 1.5;
+        margin: 10px 0;
+
+        & + .description {
+          line-height: 1.2;
+          & > span {
+            display: block;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+
+    .info-bottom {
+      padding-left: 12px;
+      margin: 18px 0;
+      border-left: 1px solid #f2f2f2;
+
+      & > div {
+        width: 260px;
+        margin: 0 auto;
+      }
+      .personal-info ul {
+        list-style: none;
+        margin: 20px 0 20px 10px;
+
+        li.info-item {
+          @include relative-font-size(1);
+          line-height: 2;
+          letter-spacing: 1.2px;
+
+          span.txt {
+            padding-left: 6px;
+          }
+
+          span.line-2 {
+            display: block;
+            line-height: 1;
+            padding-left: 28px;
+          }
+        }
+      }
+      .sns-info {
+        margin-top: 32px; 
+
+        ul {
+          list-style: none;
+          display: flex;
+          margin: 0 20px;
+
+          li.sns-item {
+            flex: 1 0 20%;
+            text-align: center;
+            justify-content: center;
+            @include relative-font-size(1.7);
+
+            a {
+              color: $grey-color;
+              
+              &:hover {
+                text-decoration: none;
+                color: #ff5100;
+              } 
+            }
+          }
+        }
+      }
+      @include media-query($on-palm) {
+        padding: 0;
+        border-top: 1px solid #f2f2f2;
+        border-left: none;
+        margin: 32px 0px;
+        padding-top: 12px;
+      }
+    }
+    @include media-query($on-palm) {
+      display: block;
+    }
+  }
 }

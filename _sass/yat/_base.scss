@@ -290,3 +290,27 @@ table {
   overflow: hidden;
 }
 
+/* Accessibility */
+.blind {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: insert(50%);
+  margin: -1px;
+}
+caption.blind {
+  display: table-caption;
+  height: 1px;
+  margin-bottom: -1px;
+  position: static;
+}
+
+/* other font style */
+.f-pens {
+  font-family: $pens-font-family;
+}
