@@ -42,7 +42,7 @@ router의 사용은 router-view, router-link 로 사용할 수 있음.
 
   # 아래는 라우터로 호출되는 컴포넌트 파일이 render 됨
   <router-view></router-view>
-{% end highlight %}
+{% endhighlight %}
 
 공식 문서를 참고한 router.js 작성   
 {% highlight router.js %}
@@ -82,7 +82,7 @@ const router = createRouter({
 })
 
 export default router; // 여기서 export 해줌으로 router.js는 끝.
-{% end highlight %}
+{% endhighlight %}
 
 여기까지가 router.js의 내용.   
 아래 내용은 vite 로 vue create 생성시 만들어진 main.js에서 작성.   
@@ -102,7 +102,7 @@ app.mount('#app')
 createApp(App).use(router).mount('#app')
 
 // Now the app has started!
-{% end highlight %}
+{% endhighlight %}
    
 ## 3. 추가 설정
 
