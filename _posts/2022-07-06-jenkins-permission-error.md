@@ -15,7 +15,7 @@ tags: [study]
 
 [Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
   
-나같은 경우는 위 문서의 5번까지만 따라하면 될 것 같다.
+나는 위 문서의 5번까지만 따라하면 될 것 같다.
 
 정리를 하자면
 
@@ -43,7 +43,7 @@ source ~/.profile
    
 npm 권한 문제를 해결하니 도커에서도 권한 문제가 발생
 도커는 접근할 때 접근할 유저의 권한을 설정해 줘야한다.
-나같은 경우에는 jenkins가 접근할 권한을 줘야 됨
+이런 경우에는 jenkins가 접근할 권한을 줘야 됨
    
 {% highlight sh %}
 sudo /usr/sbin/groupadd -f docker
